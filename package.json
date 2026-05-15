@@ -10,7 +10,8 @@
     "lint": "eslint",
     "test": "vitest",
     "test:bench": "vitest bench",
-    "test:load": "k6 run performance-tests/load-test.js"
+    "test:load": "k6 run performance-tests/load-test.js",
+    "postinstall": "prisma generate"
   },
   "prisma": {
     "seed": "tsx prisma/seed.ts"
