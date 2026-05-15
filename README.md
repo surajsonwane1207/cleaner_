@@ -80,11 +80,27 @@ npm run test:load  # k6 Load testing
 
 ## 🚢 Deployment
 
-### Docker
+### Docker Compose (Local Development)
+Orchestrates Next.js and PostgreSQL for a production-like local environment.
 ```bash
-docker build -t bharatclean .
-docker run -p 3000:3000 bharatclean
+docker-compose up --build
 ```
+The app will be available at [http://localhost:3000](http://localhost:3000).
+
+### Kubernetes
+Deployment manifests are located in the `k8s/` directory.
+1. Apply secrets and configurations:
+   ```bash
+   kubectl apply -f k8s/secrets.yaml
+   ```
+2. Deploy PostgreSQL:
+   ```bash
+   kubectl apply -f k8s/postgres.yaml
+   ```
+3. Deploy BharatClean Web:
+   ```bash
+   kubectl apply -f k8s/web.yaml
+   ```
 
 ### Netlify
 The project is configured for Netlify via `netlify.toml`. 
