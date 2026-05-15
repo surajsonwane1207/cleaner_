@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# BharatClean - Professional Cleaning Subscription Platform
 
-## Getting Started
+BharatClean is a comprehensive full-stack web application designed for professional cleaning services in India. It connects customers with professional cleaners through a subscription-based model, featuring automated booking, real-time management, and secure payments.
 
-First, run the development server:
+## 🚀 Key Features
 
+### 👤 User Roles
+- **Customer**: Browse plans, subscribe via Razorpay, book cleaning sessions, and provide feedback.
+- **Cleaner**: Manage assigned jobs, mark tasks as completed, and view job history.
+- **Admin**: System-wide dashboard with user management, global booking overview, and support ticket tracking.
+
+### 🛠 Technical Capabilities
+- **Authentication**: Secure role-based access control (RBAC) using NextAuth.js.
+- **Subscriptions**: Recurring billing integration with Razorpay.
+- **Support System**: Public and private support portal with ticket management.
+- **Full Automation**: Extensive Selenium E2E test suite covering all user journeys.
+- **Deployment Ready**: Optimized Docker configurations and CI/CD pipelines.
+
+## 🛠 Tech Stack
+
+- **Frontend/Backend**: Next.js 16 (App Router, Turbopack)
+- **Styling**: Tailwind CSS + Shadcn UI
+- **Database**: SQLite (Local) / PostgreSQL (Production)
+- **ORM**: Prisma
+- **Auth**: NextAuth.js v5
+- **Payments**: Razorpay
+- **Testing**: Selenium (E2E), Vitest (Unit), k6 (Performance)
+
+## 🏁 Getting Started
+
+### 1. Prerequisites
+- Node.js 24+
+- Java 8 (for Selenium tests)
+- Maven (for Selenium tests)
+
+### 2. Installation
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/surajsonwane1207/cleaner_.git
+cd cleaner_
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 3. Environment Setup
+Create a `.env` file in the root directory (refer to `.env.example`):
+```env
+DATABASE_URL="file:./dev.db"
+AUTH_SECRET="your-secret-key"
+RAZORPAY_KEY_ID="your-id"
+RAZORPAY_KEY_SECRET="your-secret"
+RESEND_API_KEY="your-key"
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 4. Database Initialization
+```bash
+npx prisma db push
+npm run prisma:seed # Pre-fills Admin, Cleaner, and Plans
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 5. Start Development
+```bash
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000)
 
-## Learn More
+## 🧪 Testing
 
-To learn more about Next.js, take a look at the following resources:
+### Selenium E2E Tests
+Tests are located in `selenium-tests/`.
+```bash
+cd selenium-tests/selenium-tests
+mvn test
+```
+*Note: Visual execution is enabled by default. Screenshots are saved in `screenshots/` on failure.*
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Unit & Performance
+```bash
+npm run test       # Vitest
+npm run test:load  # k6 Load testing
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚢 Deployment
 
-## Deploy on Vercel
+### Docker
+```bash
+docker build -t bharatclean .
+docker run -p 3000:3000 bharatclean
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Netlify
+The project is configured for Netlify via `netlify.toml`. 
+- **Build Command**: `npx prisma generate && next build`
+- **Publish Directory**: `.next`
+- **Requirement**: Use a remote PostgreSQL database for production.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📄 Documentation
+Detailed technical documentation is available in the `docs/` folder:
+- [Architecture](./docs/ARCHITECTURE.md)
+- [Requirements (SRS)](./docs/SRS.md)
+- [Functional Requirements (FRD)](./docs/FRD.md)
+- [Test Plan](./docs/TEST_PLAN.md)
+
+---
+Built with ❤️ for a Spotless India.
