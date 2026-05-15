@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="74.436" tests="7" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="webdriver.chrome.driver" value="/home/suraj/.cache/selenium/chromedriver/linux64/147.0.7727.117/chromedriver"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/suraj/Desktop/projects/cleaners_/selenium-tests/selenium-tests/target/test-classes:/home/suraj/Desktop/projects/cleaners_/selenium-tests/selenium-tests/target/classes:/home/suraj/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/home/suraj/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/home/suraj/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/home/suraj/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/home/suraj/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/home/suraj/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/home/suraj/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/home/suraj/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/home/suraj/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/home/suraj/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/home/suraj/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/home/suraj/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/home/suraj/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/home/suraj/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/home/suraj/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/home/suraj/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/home/suraj/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/home/suraj/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/home/suraj/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/home/suraj/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/home/suraj/.m2/repository/io/github/bonigarcia/webdrivermanager/5.6.2/webdrivermanager-5.6.2.jar:/home/suraj/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/home/suraj/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/home/suraj/.m2/repository/com/github/docker-java/docker-java/3.3.4/docker-java-3.3.4.jar:/home/suraj/.m2/repository/com/github/docker-java/docker-java-core/3.3.4/docker-java-core-3.3.4.jar:/home/suraj/.m2/repository/com/github/docker-java/docker-java-api/3.3.4/docker-java-api-3.3.4.jar:/home/suraj/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/home/suraj/.m2/repository/commons-io/commons-io/2.13.0/commons-io-2.13.0.jar:/home/suraj/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/home/suraj/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/home/suraj/.m2/repository/org/bouncycastle/bcpkix-jdk18on/1.76/bcpkix-jdk18on-1.76.jar:/home/suraj/.m2/repository/org/bouncycastle/bcprov-jdk18on/1.76/bcprov-jdk18on-1.76.jar:/home/suraj/.m2/repository/org/bouncycastle/bcutil-jdk18on/1.76/bcutil-jdk18on-1.76.jar:/home/suraj/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/home/suraj/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.3.4/docker-java-transport-httpclient5-3.3.4.jar:/home/suraj/.m2/repository/com/github/docker-java/docker-java-transport/3.3.4/docker-java-transport-3.3.4.jar:/home/suraj/.m2/repository/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar:/home/suraj/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/home/suraj/.m2/repository/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.jar:/home/suraj/.m2/repository/org/apache/commons/commons-compress/1.24.0/commons-compress-1.24.0.jar:/home/suraj/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/home/suraj/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/home/suraj/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/home/suraj/.m2/repository/org/testng/testng/7.4.0/testng-7.4.0.jar:/home/suraj/.m2/repository/com/beust/jcommander/1.78/jcommander-1.78.jar:/home/suraj/.m2/repository/org/webjars/jquery/3.5.1/jquery-3.5.1.jar:/home/suraj/.m2/repository/io/cucumber/cucumber-java/7.2.3/cucumber-java-7.2.3.jar:/home/suraj/.m2/repository/io/cucumber/cucumber-core/7.2.3/cucumber-core-7.2.3.jar:/home/suraj/.m2/repository/io/cucumber/cucumber-gherkin/7.2.3/cucumber-gherkin-7.2.3.jar:/home/suraj/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.2.3/cucumber-gherkin-messages-7.2.3.jar:/home/suraj/.m2/repository/io/cucumber/messages/17.1.1/messages-17.1.1.jar:/home/suraj/.m2/repository/io/cucumber/tag-expressions/4.1.0/tag-expressions-4.1.0.jar:/home/suraj/.m2/repository/io/cucumber/cucumber-expressions/15.0.1/cucumber-expressions-15.0.1.jar:/home/suraj/.m2/repository/io/cucumber/datatable/7.2.3/datatable-7.2.3.jar:/home/suraj/.m2/repository/io/cucumber/cucumber-plugin/7.2.3/cucumber-plugin-7.2.3.jar:/home/suraj/.m2/repository/io/cucumber/docstring/7.2.3/docstring-7.2.3.jar:/home/suraj/.m2/repository/io/cucumber/html-formatter/17.0.0/html-formatter-17.0.0.jar:/home/suraj/.m2/repository/io/cucumber/ci-environment/8.1.0/ci-environment-8.1.0.jar:/home/suraj/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/suraj/.m2/repository/io/cucumber/cucumber-testng/7.2.3/cucumber-testng-7.2.3.jar:/home/suraj/.m2/repository/org/apache/logging/log4j/log4j-api/2.22.1/log4j-api-2.22.1.jar:/home/suraj/.m2/repository/org/apache/logging/log4j/log4j-core/2.22.1/log4j-core-2.22.1.jar:/home/suraj/.m2/repository/com/aventstack/extentreports/4.1.7/extentreports-4.1.7.jar:/home/suraj/.m2/repository/org/freemarker/freemarker/2.3.29/freemarker-2.3.29.jar:/home/suraj/.m2/repository/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar:/home/suraj/.m2/repository/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.jar:/home/suraj/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/suraj/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/home/suraj/.m2/repository/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.jar:/home/suraj/.m2/repository/org/mongodb/mongodb-driver/3.12.0/mongodb-driver-3.12.0.jar:/home/suraj/.m2/repository/org/mongodb/mongodb-driver-core/3.12.0/mongodb-driver-core-3.12.0.jar:/home/suraj/.m2/repository/org/mongodb/bson/3.12.0/bson-3.12.0.jar:/home/suraj/.m2/repository/io/qameta/allure/allure-testng/2.17.3/allure-testng-2.17.3.jar:/home/suraj/.m2/repository/io/qameta/allure/allure-java-commons/2.17.3/allure-java-commons-2.17.3.jar:/home/suraj/.m2/repository/io/qameta/allure/allure-model/2.17.3/allure-model-2.17.3.jar:/home/suraj/.m2/repository/io/qameta/allure/allure-test-filter/2.17.3/allure-test-filter-2.17.3.jar:/home/suraj/.m2/repository/io/qameta/allure/allure-cucumber7-jvm/2.17.3/allure-cucumber7-jvm-2.17.3.jar:/home/suraj/.m2/repository/io/cucumber/gherkin/22.0.0/gherkin-22.0.0.jar:"/>
+    <property name="java.vm.vendor" value="Private Build"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Linux"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
+    <property name="sun.java.command" value="/home/suraj/Desktop/projects/cleaners_/selenium-tests/selenium-tests/target/surefire/surefirebooter-20260515090404833_3.jar /home/suraj/Desktop/projects/cleaners_/selenium-tests/selenium-tests/target/surefire 2026-05-15T09-04-04_163-jvmRun1 surefire-20260515090404833_1tmp surefire_0-20260515090404833_2tmp"/>
+    <property name="surefire.test.class.path" value="/home/suraj/Desktop/projects/cleaners_/selenium-tests/selenium-tests/target/test-classes:/home/suraj/Desktop/projects/cleaners_/selenium-tests/selenium-tests/target/classes:/home/suraj/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/home/suraj/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/home/suraj/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/home/suraj/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/home/suraj/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/home/suraj/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/home/suraj/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/home/suraj/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/home/suraj/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/home/suraj/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/home/suraj/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/home/suraj/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/home/suraj/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/home/suraj/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/home/suraj/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/home/suraj/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/home/suraj/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/home/suraj/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/home/suraj/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/home/suraj/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/home/suraj/.m2/repository/io/github/bonigarcia/webdrivermanager/5.6.2/webdrivermanager-5.6.2.jar:/home/suraj/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/home/suraj/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/home/suraj/.m2/repository/com/github/docker-java/docker-java/3.3.4/docker-java-3.3.4.jar:/home/suraj/.m2/repository/com/github/docker-java/docker-java-core/3.3.4/docker-java-core-3.3.4.jar:/home/suraj/.m2/repository/com/github/docker-java/docker-java-api/3.3.4/docker-java-api-3.3.4.jar:/home/suraj/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/home/suraj/.m2/repository/commons-io/commons-io/2.13.0/commons-io-2.13.0.jar:/home/suraj/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/home/suraj/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/home/suraj/.m2/repository/org/bouncycastle/bcpkix-jdk18on/1.76/bcpkix-jdk18on-1.76.jar:/home/suraj/.m2/repository/org/bouncycastle/bcprov-jdk18on/1.76/bcprov-jdk18on-1.76.jar:/home/suraj/.m2/repository/org/bouncycastle/bcutil-jdk18on/1.76/bcutil-jdk18on-1.76.jar:/home/suraj/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/home/suraj/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.3.4/docker-java-transport-httpclient5-3.3.4.jar:/home/suraj/.m2/repository/com/github/docker-java/docker-java-transport/3.3.4/docker-java-transport-3.3.4.jar:/home/suraj/.m2/repository/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar:/home/suraj/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/home/suraj/.m2/repository/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.jar:/home/suraj/.m2/repository/org/apache/commons/commons-compress/1.24.0/commons-compress-1.24.0.jar:/home/suraj/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/home/suraj/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/home/suraj/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/home/suraj/.m2/repository/org/testng/testng/7.4.0/testng-7.4.0.jar:/home/suraj/.m2/repository/com/beust/jcommander/1.78/jcommander-1.78.jar:/home/suraj/.m2/repository/org/webjars/jquery/3.5.1/jquery-3.5.1.jar:/home/suraj/.m2/repository/io/cucumber/cucumber-java/7.2.3/cucumber-java-7.2.3.jar:/home/suraj/.m2/repository/io/cucumber/cucumber-core/7.2.3/cucumber-core-7.2.3.jar:/home/suraj/.m2/repository/io/cucumber/cucumber-gherkin/7.2.3/cucumber-gherkin-7.2.3.jar:/home/suraj/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.2.3/cucumber-gherkin-messages-7.2.3.jar:/home/suraj/.m2/repository/io/cucumber/messages/17.1.1/messages-17.1.1.jar:/home/suraj/.m2/repository/io/cucumber/tag-expressions/4.1.0/tag-expressions-4.1.0.jar:/home/suraj/.m2/repository/io/cucumber/cucumber-expressions/15.0.1/cucumber-expressions-15.0.1.jar:/home/suraj/.m2/repository/io/cucumber/datatable/7.2.3/datatable-7.2.3.jar:/home/suraj/.m2/repository/io/cucumber/cucumber-plugin/7.2.3/cucumber-plugin-7.2.3.jar:/home/suraj/.m2/repository/io/cucumber/docstring/7.2.3/docstring-7.2.3.jar:/home/suraj/.m2/repository/io/cucumber/html-formatter/17.0.0/html-formatter-17.0.0.jar:/home/suraj/.m2/repository/io/cucumber/ci-environment/8.1.0/ci-environment-8.1.0.jar:/home/suraj/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/suraj/.m2/repository/io/cucumber/cucumber-testng/7.2.3/cucumber-testng-7.2.3.jar:/home/suraj/.m2/repository/org/apache/logging/log4j/log4j-api/2.22.1/log4j-api-2.22.1.jar:/home/suraj/.m2/repository/org/apache/logging/log4j/log4j-core/2.22.1/log4j-core-2.22.1.jar:/home/suraj/.m2/repository/com/aventstack/extentreports/4.1.7/extentreports-4.1.7.jar:/home/suraj/.m2/repository/org/freemarker/freemarker/2.3.29/freemarker-2.3.29.jar:/home/suraj/.m2/repository/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar:/home/suraj/.m2/repository/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.jar:/home/suraj/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/suraj/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/home/suraj/.m2/repository/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.jar:/home/suraj/.m2/repository/org/mongodb/mongodb-driver/3.12.0/mongodb-driver-3.12.0.jar:/home/suraj/.m2/repository/org/mongodb/mongodb-driver-core/3.12.0/mongodb-driver-core-3.12.0.jar:/home/suraj/.m2/repository/org/mongodb/bson/3.12.0/bson-3.12.0.jar:/home/suraj/.m2/repository/io/qameta/allure/allure-testng/2.17.3/allure-testng-2.17.3.jar:/home/suraj/.m2/repository/io/qameta/allure/allure-java-commons/2.17.3/allure-java-commons-2.17.3.jar:/home/suraj/.m2/repository/io/qameta/allure/allure-model/2.17.3/allure-model-2.17.3.jar:/home/suraj/.m2/repository/io/qameta/allure/allure-test-filter/2.17.3/allure-test-filter-2.17.3.jar:/home/suraj/.m2/repository/io/qameta/allure/allure-cucumber7-jvm/2.17.3/allure-cucumber7-jvm-2.17.3.jar:/home/suraj/.m2/repository/io/cucumber/gherkin/22.0.0/gherkin-22.0.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/suraj"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
+    <property name="basedir" value="/home/suraj/Desktop/projects/cleaners_/selenium-tests/selenium-tests"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/home/suraj/Desktop/projects/cleaners_/selenium-tests/selenium-tests/target/surefire/surefirebooter-20260515090404833_3.jar:/home/suraj/.m2/repository/org/aspectj/aspectjweaver/1.9.6/aspectjweaver-1.9.6.jar"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_482-8u482-ga~us1-0ubuntu1~24.04-b08"/>
+    <property name="user.name" value="suraj"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.17.0-23-generic"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/suraj/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="1.8.0_482"/>
+    <property name="user.dir" value="/home/suraj/Desktop/projects/cleaners_/selenium-tests/selenium-tests"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Private Build"/>
+    <property name="java.vm.version" value="25.482-b08"/>
+    <property name="java.specification.maintenance.version" value="6"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="testLandingPage" classname="com.bharatclean.tests.AppTestNG" time="6.101">
+    <system-out><![CDATA[09:04:14.624 [main] INFO  com.bharatclean.utils.Log - Starting Tests in UI Tests
+09:04:22.145 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - testNavigationToLogin test is starting.
+09:04:22.141 [TestNG-test=UI Tests-1] INFO  com.bharatclean.utils.Log - testLandingPage test is starting.
+09:04:22.413 [TestNG-test=UI Tests-1] INFO  com.bharatclean.utils.Log - Starting testLandingPage
+09:04:22.421 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - Starting testNavigationToLogin
+09:04:28.245 [TestNG-test=UI Tests-1] INFO  com.bharatclean.utils.Log - Finished testLandingPage
+09:04:28.255 [TestNG-test=UI Tests-1] INFO  com.bharatclean.utils.Log - testLandingPage test is successful.
+]]></system-out>
+    <system-err><![CDATA[SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+Starting ChromeDriver 147.0.7727.117 (474cc805edd6b22006509896c910f6b6da2427ad-refs/branch-heads/7727_111@{#4}) on port 28566
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/Starting ChromeDriver 147.0.7727.117 (474cc805edd6b22006509896c910f6b6da2427ad-refs/branch-heads/7727_111security-considerations for suggestions on keeping ChromeDriver safe.
+@{#4}) on port 16348
+Only local connections are allowed.
+Please see https:/ChromeDriver was started successfully on port 28/5c6h6r.
+omedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 16348.
+May 15, 2026 9:04:21 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+May 15, 2026 9:04:21 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="testNavigationToLogin" classname="com.bharatclean.tests.AppTestNG" time="8.2">
+    <system-out><![CDATA[09:04:30.353 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - Finished testNavigationToLogin
+09:04:30.354 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - testNavigationToLogin test is successful.
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 147.0.7727.117 (474cc805edd6b22006509896c910f6b6da2427ad-refs/branch-heads/7727_111@{#4}) on port 23169
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 23169.
+]]></system-err>
+  </testcase>
+  <testcase name="testReviewPageLoad" classname="com.bharatclean.tests.ReviewTestNG" time="6.937">
+    <system-out><![CDATA[09:04:31.567 [TestNG-test=UI Tests-1] INFO  com.bharatclean.utils.Log - testSupportSubmission test is starting.
+09:04:31.574 [TestNG-test=UI Tests-1] INFO  com.bharatclean.utils.Log - Starting testSupportSubmission
+09:04:33.773 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - testReviewPageLoad test is starting.
+09:04:33.781 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - Starting testReviewPageLoad
+09:04:40.716 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - Finished testReviewPageLoad
+09:04:40.717 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - testReviewPageLoad test is successful.
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 147.0.7727.117 (474cc805edd6b22006509896c910f6b6da2427ad-refs/branch-heads/7727_111@{#4}) on port 17047
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 17047.
+May 15, 2026 9:04:31 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+May 15, 2026 9:04:33 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="testSupportSubmission" classname="com.bharatclean.tests.SupportTestNG" time="7.45">
+    <system-out><![CDATA[09:04:41.208 [TestNG-test=UI Tests-1] INFO  com.bharatclean.utils.Log - Finished testSupportSubmission
+09:04:41.209 [TestNG-test=UI Tests-1] INFO  com.bharatclean.utils.Log - testSupportSubmission test is successful.
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 147.0.7727.117 (474cc805edd6b22006509896c910f6b6da2427ad-refs/branch-heads/7727_111@{#4}) on port 27849
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 27849.
+]]></system-err>
+  </testcase>
+  <testcase name="testAdminDashboard" classname="com.bharatclean.tests.AdminTestNG" time="9.45">
+    <system-out><![CDATA[09:04:43.252 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - testAdminDashboard test is starting.
+09:04:43.259 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - Starting testAdminDashboard
+09:04:44.136 [TestNG-test=UI Tests-1] INFO  com.bharatclean.utils.Log - testCleanerDashboard test is starting.
+09:04:44.153 [TestNG-test=UI Tests-1] INFO  com.bharatclean.utils.Log - Starting testCleanerDashboard
+09:04:45.891 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - Logging in as Admin
+09:04:46.261 [TestNG-test=UI Tests-1] INFO  com.bharatclean.utils.Log - Logging in as Cleaner
+09:04:50.837 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - Navigating to Admin Dashboard
+09:04:51.442 [TestNG-test=UI Tests-1] INFO  com.bharatclean.utils.Log - Navigating to Cleaner Portal
+09:04:53.574 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - Admin Dashboard verified successfully
+09:04:53.574 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - Finished testAdminDashboard
+09:04:53.575 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - testAdminDashboard test is successful.
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 147.0.7727.117 (474cc805edd6b22006509896c910f6b6da2427ad-refs/branch-heads/7727_111@{#4}) on port 32565
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 32565.
+May 15, 2026 9:04:43 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+May 15, 2026 9:04:44 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="testCleanerDashboard" classname="com.bharatclean.tests.CleanerTestNG" time="10.709">
+    <system-out><![CDATA[09:04:54.839 [TestNG-test=UI Tests-1] INFO  com.bharatclean.utils.Log - Cleaner Portal verified successfully
+09:04:54.839 [TestNG-test=UI Tests-1] INFO  com.bharatclean.utils.Log - Finished testCleanerDashboard
+09:04:54.841 [TestNG-test=UI Tests-1] INFO  com.bharatclean.utils.Log - testCleanerDashboard test is successful.
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 147.0.7727.117 (474cc805edd6b22006509896c910f6b6da2427ad-refs/branch-heads/7727_111@{#4}) on port 12962
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 12962.
+]]></system-err>
+  </testcase>
+  <testcase name="testFullUserJourney" classname="com.bharatclean.tests.EndToEndTestNG" time="24.725">
+    <system-out><![CDATA[09:04:56.429 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - testFullUserJourney test is starting.
+09:04:56.472 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - Starting testFullUserJourney
+09:04:58.118 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - Step 1: Registering new user: testuser_43e46486@example.com
+09:05:01.351 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - Step 2: Logging in
+09:05:06.822 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - Step 3: Selecting service and paying
+09:05:11.773 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - Step 4: Booking a cleaning
+09:05:15.480 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - Filling booking details
+09:05:17.231 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - Step 5: Logging out
+09:05:21.164 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - Finished testFullUserJourney successfully
+09:05:21.166 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - testFullUserJourney test is successful.
+]]></system-out>
+    <system-err><![CDATA[May 15, 2026 9:04:56 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+</testsuite>

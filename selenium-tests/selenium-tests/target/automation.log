@@ -1,0 +1,116 @@
+2026-05-15 08:55:06.594 [main] INFO  com.bharatclean.utils.Log - Starting Tests in Surefire test
+2026-05-15 08:55:14.089 [main] INFO  com.bharatclean.utils.Log - testFullUserJourney test is starting.
+2026-05-15 08:55:14.201 [main] INFO  com.bharatclean.utils.Log - Starting testFullUserJourney
+2026-05-15 08:55:17.013 [main] INFO  com.bharatclean.utils.Log - Step 1: Registering new user: testuser_44b642dd@example.com
+2026-05-15 08:55:20.548 [main] INFO  com.bharatclean.utils.Log - Step 2: Logging in
+2026-05-15 08:55:25.298 [main] INFO  com.bharatclean.utils.Log - Step 3: Selecting service and paying
+2026-05-15 08:55:30.089 [main] INFO  com.bharatclean.utils.Log - Step 4: Booking a cleaning
+2026-05-15 08:55:33.804 [main] INFO  com.bharatclean.utils.Log - Filling booking details
+2026-05-15 08:55:35.596 [main] INFO  com.bharatclean.utils.Log - Step 5: Logging out
+2026-05-15 08:56:05.793 [main] ERROR com.bharatclean.utils.Log - testFullUserJourney test is failed.
+2026-05-15 08:56:06.259 [main] INFO  com.bharatclean.utils.Log - Screenshot saved: testFullUserJourney_20260515085606.png
+2026-05-15 08:56:07.090 [main] INFO  com.bharatclean.utils.Log - Finishing Tests in Surefire test
+2026-05-15 08:56:51.061 [main] INFO  com.bharatclean.utils.Log - Starting Tests in Surefire test
+2026-05-15 08:56:57.177 [main] INFO  com.bharatclean.utils.Log - testFullUserJourney test is starting.
+2026-05-15 08:56:57.284 [main] INFO  com.bharatclean.utils.Log - Starting testFullUserJourney
+2026-05-15 08:57:00.410 [main] INFO  com.bharatclean.utils.Log - Step 1: Registering new user: testuser_6a75c5fb@example.com
+2026-05-15 08:57:04.223 [main] INFO  com.bharatclean.utils.Log - Step 2: Logging in
+2026-05-15 08:57:09.213 [main] INFO  com.bharatclean.utils.Log - Step 3: Selecting service and paying
+2026-05-15 08:57:13.484 [main] INFO  com.bharatclean.utils.Log - Step 4: Booking a cleaning
+2026-05-15 08:57:17.235 [main] INFO  com.bharatclean.utils.Log - Filling booking details
+2026-05-15 08:57:19.221 [main] INFO  com.bharatclean.utils.Log - Step 5: Logging out
+2026-05-15 08:57:53.991 [main] ERROR com.bharatclean.utils.Log - testFullUserJourney test is failed.
+2026-05-15 08:57:55.999 [main] INFO  com.bharatclean.utils.Log - Screenshot saved: testFullUserJourney_20260515085755.png
+2026-05-15 08:57:56.761 [main] INFO  com.bharatclean.utils.Log - Finishing Tests in Surefire test
+2026-05-15 08:58:50.867 [main] INFO  com.bharatclean.utils.Log - Starting Tests in Surefire test
+2026-05-15 08:58:56.942 [main] INFO  com.bharatclean.utils.Log - testFullUserJourney test is starting.
+2026-05-15 08:58:57.210 [main] INFO  com.bharatclean.utils.Log - Starting testFullUserJourney
+2026-05-15 08:58:59.468 [main] INFO  com.bharatclean.utils.Log - Step 1: Registering new user: testuser_8e61b43b@example.com
+2026-05-15 08:59:02.674 [main] INFO  com.bharatclean.utils.Log - Step 2: Logging in
+2026-05-15 08:59:07.547 [main] INFO  com.bharatclean.utils.Log - Step 3: Selecting service and paying
+2026-05-15 08:59:12.629 [main] INFO  com.bharatclean.utils.Log - Step 4: Booking a cleaning
+2026-05-15 08:59:16.468 [main] INFO  com.bharatclean.utils.Log - Filling booking details
+2026-05-15 08:59:17.799 [main] INFO  com.bharatclean.utils.Log - Step 5: Logging out
+2026-05-15 08:59:21.213 [main] INFO  com.bharatclean.utils.Log - Finished testFullUserJourney successfully
+2026-05-15 08:59:21.218 [main] INFO  com.bharatclean.utils.Log - testFullUserJourney test is successful.
+2026-05-15 08:59:21.460 [main] INFO  com.bharatclean.utils.Log - Finishing Tests in Surefire test
+2026-05-15 09:02:26.571 [main] INFO  com.bharatclean.utils.Log - Starting Tests in Surefire test
+2026-05-15 09:02:33.350 [main] INFO  com.bharatclean.utils.Log - testCleanerDashboard test is starting.
+2026-05-15 09:02:33.459 [main] INFO  com.bharatclean.utils.Log - Starting testCleanerDashboard
+2026-05-15 09:02:38.362 [main] INFO  com.bharatclean.utils.Log - Logging in as Cleaner
+2026-05-15 09:02:43.738 [main] INFO  com.bharatclean.utils.Log - Navigating to Cleaner Portal
+2026-05-15 09:02:52.248 [main] INFO  com.bharatclean.utils.Log - Cleaner Portal verified successfully
+2026-05-15 09:02:52.248 [main] INFO  com.bharatclean.utils.Log - Finished testCleanerDashboard
+2026-05-15 09:02:52.254 [main] INFO  com.bharatclean.utils.Log - testCleanerDashboard test is successful.
+2026-05-15 09:02:54.877 [main] INFO  com.bharatclean.utils.Log - testAdminDashboard test is starting.
+2026-05-15 09:02:54.884 [main] INFO  com.bharatclean.utils.Log - Starting testAdminDashboard
+2026-05-15 09:02:56.373 [main] INFO  com.bharatclean.utils.Log - Logging in as Admin
+2026-05-15 09:02:59.979 [main] INFO  com.bharatclean.utils.Log - Navigating to Admin Dashboard
+2026-05-15 09:03:01.466 [main] INFO  com.bharatclean.utils.Log - Admin Dashboard verified successfully
+2026-05-15 09:03:01.466 [main] INFO  com.bharatclean.utils.Log - Finished testAdminDashboard
+2026-05-15 09:03:01.467 [main] INFO  com.bharatclean.utils.Log - testAdminDashboard test is successful.
+2026-05-15 09:03:01.707 [main] INFO  com.bharatclean.utils.Log - Finishing Tests in Surefire test
+2026-05-15 09:04:14.624 [main] INFO  com.bharatclean.utils.Log - Starting Tests in UI Tests
+2026-05-15 09:04:22.141 [TestNG-test=UI Tests-1] INFO  com.bharatclean.utils.Log - testLandingPage test is starting.
+2026-05-15 09:04:22.145 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - testNavigationToLogin test is starting.
+2026-05-15 09:04:22.413 [TestNG-test=UI Tests-1] INFO  com.bharatclean.utils.Log - Starting testLandingPage
+2026-05-15 09:04:22.421 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - Starting testNavigationToLogin
+2026-05-15 09:04:28.245 [TestNG-test=UI Tests-1] INFO  com.bharatclean.utils.Log - Finished testLandingPage
+2026-05-15 09:04:28.255 [TestNG-test=UI Tests-1] INFO  com.bharatclean.utils.Log - testLandingPage test is successful.
+2026-05-15 09:04:30.353 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - Finished testNavigationToLogin
+2026-05-15 09:04:30.354 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - testNavigationToLogin test is successful.
+2026-05-15 09:04:31.567 [TestNG-test=UI Tests-1] INFO  com.bharatclean.utils.Log - testSupportSubmission test is starting.
+2026-05-15 09:04:31.574 [TestNG-test=UI Tests-1] INFO  com.bharatclean.utils.Log - Starting testSupportSubmission
+2026-05-15 09:04:33.773 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - testReviewPageLoad test is starting.
+2026-05-15 09:04:33.781 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - Starting testReviewPageLoad
+2026-05-15 09:04:40.716 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - Finished testReviewPageLoad
+2026-05-15 09:04:40.717 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - testReviewPageLoad test is successful.
+2026-05-15 09:04:41.208 [TestNG-test=UI Tests-1] INFO  com.bharatclean.utils.Log - Finished testSupportSubmission
+2026-05-15 09:04:41.209 [TestNG-test=UI Tests-1] INFO  com.bharatclean.utils.Log - testSupportSubmission test is successful.
+2026-05-15 09:04:43.252 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - testAdminDashboard test is starting.
+2026-05-15 09:04:43.259 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - Starting testAdminDashboard
+2026-05-15 09:04:44.136 [TestNG-test=UI Tests-1] INFO  com.bharatclean.utils.Log - testCleanerDashboard test is starting.
+2026-05-15 09:04:44.153 [TestNG-test=UI Tests-1] INFO  com.bharatclean.utils.Log - Starting testCleanerDashboard
+2026-05-15 09:04:45.891 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - Logging in as Admin
+2026-05-15 09:04:46.261 [TestNG-test=UI Tests-1] INFO  com.bharatclean.utils.Log - Logging in as Cleaner
+2026-05-15 09:04:50.837 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - Navigating to Admin Dashboard
+2026-05-15 09:04:51.442 [TestNG-test=UI Tests-1] INFO  com.bharatclean.utils.Log - Navigating to Cleaner Portal
+2026-05-15 09:04:53.574 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - Admin Dashboard verified successfully
+2026-05-15 09:04:53.574 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - Finished testAdminDashboard
+2026-05-15 09:04:53.575 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - testAdminDashboard test is successful.
+2026-05-15 09:04:54.839 [TestNG-test=UI Tests-1] INFO  com.bharatclean.utils.Log - Cleaner Portal verified successfully
+2026-05-15 09:04:54.839 [TestNG-test=UI Tests-1] INFO  com.bharatclean.utils.Log - Finished testCleanerDashboard
+2026-05-15 09:04:54.841 [TestNG-test=UI Tests-1] INFO  com.bharatclean.utils.Log - testCleanerDashboard test is successful.
+2026-05-15 09:04:56.429 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - testFullUserJourney test is starting.
+2026-05-15 09:04:56.472 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - Starting testFullUserJourney
+2026-05-15 09:04:58.118 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - Step 1: Registering new user: testuser_43e46486@example.com
+2026-05-15 09:05:01.351 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - Step 2: Logging in
+2026-05-15 09:05:06.822 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - Step 3: Selecting service and paying
+2026-05-15 09:05:11.773 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - Step 4: Booking a cleaning
+2026-05-15 09:05:15.480 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - Filling booking details
+2026-05-15 09:05:17.231 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - Step 5: Logging out
+2026-05-15 09:05:21.164 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - Finished testFullUserJourney successfully
+2026-05-15 09:05:21.166 [TestNG-test=UI Tests-2] INFO  com.bharatclean.utils.Log - testFullUserJourney test is successful.
+2026-05-15 09:05:21.436 [main] INFO  com.bharatclean.utils.Log - Finishing Tests in UI Tests
+2026-05-15 09:08:29.899 [main] INFO  com.bharatclean.utils.Log - Starting Tests in Surefire test
+2026-05-15 09:08:39.527 [main] INFO  com.bharatclean.utils.Log - testCleanerFullJourney test is starting.
+2026-05-15 09:08:39.731 [main] INFO  com.bharatclean.utils.Log - Starting testCleanerFullJourney
+2026-05-15 09:08:43.637 [main] INFO  com.bharatclean.utils.Log - Step 1: Logging in as Cleaner
+2026-05-15 09:08:48.598 [main] INFO  com.bharatclean.utils.Log - Step 2: Navigating to Cleaner Portal
+2026-05-15 09:08:51.229 [main] INFO  com.bharatclean.utils.Log - Initial completed jobs: 0
+2026-05-15 09:08:51.233 [main] INFO  com.bharatclean.utils.Log - Step 3: Marking a job as completed
+2026-05-15 09:08:54.741 [main] INFO  com.bharatclean.utils.Log - Step 4: Verifying job history update
+2026-05-15 09:08:54.764 [main] INFO  com.bharatclean.utils.Log - Final completed jobs: 1
+2026-05-15 09:08:54.765 [main] INFO  com.bharatclean.utils.Log - Step 5: Logging out
+2026-05-15 09:08:55.002 [main] INFO  com.bharatclean.utils.Log - Finished testCleanerFullJourney successfully
+2026-05-15 09:08:55.007 [main] INFO  com.bharatclean.utils.Log - testCleanerFullJourney test is successful.
+2026-05-15 09:08:55.314 [main] INFO  com.bharatclean.utils.Log - Finishing Tests in Surefire test
+2026-05-15 09:17:24.082 [main] INFO  com.bharatclean.utils.Log - Starting Tests in Surefire test
+2026-05-15 09:17:33.290 [main] INFO  com.bharatclean.utils.Log - testAdminDashboard test is starting.
+2026-05-15 09:17:34.146 [main] INFO  com.bharatclean.utils.Log - Starting testAdminDashboard
+2026-05-15 09:17:38.258 [main] INFO  com.bharatclean.utils.Log - Logging in as Admin
+2026-05-15 09:17:43.863 [main] INFO  com.bharatclean.utils.Log - Navigating to Admin Dashboard
+2026-05-15 09:17:46.046 [main] INFO  com.bharatclean.utils.Log - Admin Dashboard verified successfully
+2026-05-15 09:17:46.046 [main] INFO  com.bharatclean.utils.Log - Finished testAdminDashboard
+2026-05-15 09:17:46.062 [main] INFO  com.bharatclean.utils.Log - testAdminDashboard test is successful.
+2026-05-15 09:17:46.607 [main] INFO  com.bharatclean.utils.Log - Finishing Tests in Surefire test

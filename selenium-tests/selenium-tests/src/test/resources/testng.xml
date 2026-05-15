@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BharatClean Test Suite" parallel="methods" thread-count="2">
+    <listeners>
+        <listener class-name="com.bharatclean.utils.TestListener"/>
+    </listeners>
+    <test name="UI Tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.bharatclean.tests.AppTestNG"/>
+            <class name="com.bharatclean.tests.SupportTestNG"/>
+            <class name="com.bharatclean.tests.ReviewTestNG"/>
+            <class name="com.bharatclean.tests.AdminTestNG"/>
+            <class name="com.bharatclean.tests.CleanerTestNG"/>
+            <class name="com.bharatclean.tests.EndToEndTestNG"/>
+        </classes>
+    </test>
+</suite>
