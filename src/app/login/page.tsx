@@ -28,11 +28,7 @@ function LoginForm() {
   const { data: session } = useSession();
   const setUser = useStore((state) => state.setUser);
 
-  useEffect(() => {
-    if (searchParams.get("registered")) {
-      setSuccess("Account created successfully! Please sign in.");
-    }
-  }, [searchParams]);
+  const registeredSuccess = searchParams.get("registered") === "true";
 
   useEffect(() => {
     if (session?.user) {
@@ -86,9 +82,9 @@ function LoginForm() {
               {error}
             </div>
           )}
-          {success && (
+          {(success || registeredSuccess) && (
             <div className="bg-primary/10 text-primary text-sm p-3 rounded-md">
-              {success}
+              {success || "Account created successfully! Please sign in."}
             </div>
           )}
           <div className="space-y-2">

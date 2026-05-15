@@ -1,15 +1,15 @@
 import axiosClient from "./axios";
 
 export const authFeatures = {
-  register: (data: any) => axiosClient.post("/register", data),
-  login: (data: any) => axiosClient.post("/auth/callback/credentials", data), // Standard next-auth but we can use axios if we want
+  register: (data: Record<string, unknown>) => axiosClient.post("/register", data),
+  login: (data: Record<string, unknown>) => axiosClient.post("/auth/callback/credentials", data), // Standard next-auth but we can use axios if we want
 };
 
 export const bookingFeatures = {
-  create: (data: any) => axiosClient.post("/bookings", data),
+  create: (data: Record<string, unknown>) => axiosClient.post("/bookings", data),
   getAll: () => axiosClient.get("/bookings"),
 };
 
 export const supportFeatures = {
-  submitTicket: (data: any) => axiosClient.post("/support", data),
+  submitTicket: (data: Record<string, unknown>) => axiosClient.post("/support", data),
 };

@@ -14,6 +14,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import axios from "axios";
 
 export default function SupportPage() {
   const [formData, setFormData] = useState({
@@ -38,9 +39,13 @@ export default function SupportPage() {
       await supportFeatures.submitTicket(formData);
       setStatus("success");
       setFormData({ name: "", email: "", subject: "", message: "" });
-    } catch (error: any) {
+    } catch (error) {
       setStatus("error");
-      setErrorMessage(error.response?.data?.error || "An unexpected error occurred.");
+      if (axios.isAxiosError(error)) {
+        setErrorMessage(error.response?.data?.error || "An unexpected error occurred.");
+      } else {
+        setErrorMessage("An unexpected error occurred.");
+      }
     }
   };
 

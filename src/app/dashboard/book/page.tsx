@@ -15,6 +15,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { bookingFeatures } from "@/lib/features";
+import axios from "axios";
 
 export default function BookCleaningPage() {
   const [loading, setLoading] = useState(false);
@@ -32,8 +33,12 @@ export default function BookCleaningPage() {
     try {
       await bookingFeatures.create(data);
       router.push("/dashboard?booked=true");
-    } catch (err: any) {
-      setError(err.response?.data?.error || "Booking failed. Please try again.");
+    } catch (err) {
+      if (axios.isAxiosError(err)) {
+        setError(err.response?.data?.error || "Booking failed. Please try again.");
+      } else {
+        setError("An unexpected error occurred");
+      }
       setLoading(false);
     }
   };

@@ -1,16 +1,16 @@
 import { create } from "zustand";
 
 interface UserState {
-  user: any | null;
-  setUser: (user: any) => void;
+  user: Record<string, unknown> | null;
+  setUser: (user: Record<string, unknown>) => void;
   logout: () => void;
 }
 
 interface UIState {
   isSidebarOpen: boolean;
   setSidebarOpen: (isOpen: boolean) => void;
-  notifications: any[];
-  addNotification: (notification: any) => void;
+  notifications: Record<string, unknown>[];
+  addNotification: (notification: Record<string, unknown>) => void;
 }
 
 export const useStore = create<UserState & UIState>((set) => ({

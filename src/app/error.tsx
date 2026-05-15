@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { AlertCircle } from "lucide-react";
+import Link from "next/link";
 
 export default function Error({
   error,
@@ -30,7 +31,7 @@ export default function Error({
           Try again
         </Button>
         <Button asChild size="lg">
-          <a href="/">Go to Home</a>
+          <Link href="/">Go to Home</Link>
         </Button>
       </div>
     </div>

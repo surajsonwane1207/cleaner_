@@ -15,6 +15,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { authFeatures } from "@/lib/features";
+import axios from "axios";
 
 export default function RegisterPage() {
   const [error, setError] = useState("");
@@ -32,8 +33,12 @@ export default function RegisterPage() {
     try {
       await authFeatures.register(data);
       router.push("/login?registered=true");
-    } catch (err: any) {
-      setError(err.response?.data?.error || "Registration failed. Please try again.");
+    } catch (err) {
+      if (axios.isAxiosError(err)) {
+        setError(err.response?.data?.error || "Registration failed. Please try again.");
+      } else {
+        setError("An unexpected error occurred");
+      }
       setLoading(false);
     }
   };
