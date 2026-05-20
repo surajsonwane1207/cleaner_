@@ -1,19 +1,11 @@
 import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import bcrypt from "bcryptjs";
-import { z } from "zod";
-
-const registerSchema = z.object({
-  name: z.string().min(2),
-  email: z.string().email(),
-  password: z.string().min(6),
-});
+import { registerSchema } from "@/lib/validation";
 
 export async function POST(req: Request) {
-  console.log("Registration API hit");
   try {
     const body = await req.json();
-    console.log("Registration body:", body);
     const result = registerSchema.safeParse(body);
 
     if (!result.success) {

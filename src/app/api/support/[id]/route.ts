@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { auth } from "@/auth";
+import { supportTicketUpdateSchema } from "@/lib/validation";
 
 export async function PATCH(
   req: Request,
@@ -12,12 +13,14 @@ export async function PATCH(
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
     }
 
-    const { status } = await req.json();
+    const result = supportTicketUpdateSchema.safeParse(await req.json());
     const { id: ticketId } = await params;
 
-    if (!status) {
-      return NextResponse.json({ error: "Status is required" }, { status: 400 });
+    if (!result.success) {
+      return NextResponse.json({ error: "Invalid ticket status" }, { status: 400 });
     }
+
+    const { status } = result.data;
 
     const ticket = await prisma.supportTicket.update({
       where: { id: ticketId },

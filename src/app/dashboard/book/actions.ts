@@ -3,6 +3,7 @@
 import { prisma } from "@/lib/prisma";
 import { auth } from "@/auth";
 import { revalidatePath } from "next/cache";
+import { bookingSchema } from "@/lib/validation";
 
 export async function createBooking(formData: FormData) {
   const session = await auth();
@@ -11,16 +12,22 @@ export async function createBooking(formData: FormData) {
     return { error: "Unauthorized" };
   }
 
-  const dateStr = formData.get("date") as string;
-  const timeStr = formData.get("time") as string;
-  const address = formData.get("address") as string;
-  const notes = formData.get("notes") as string;
-
-  if (!dateStr || !timeStr || !address) {
+  if (!formData.get("date") || !formData.get("time") || !formData.get("address")) {
     return { error: "Missing required fields" };
   }
 
-  const date = new Date(`${dateStr}T${timeStr}`);
+  const result = bookingSchema.safeParse({
+    date: formData.get("date"),
+    time: formData.get("time"),
+    address: formData.get("address"),
+    notes: formData.get("notes") || undefined,
+  });
+
+  if (!result.success) {
+    return { error: "Invalid booking input" };
+  }
+
+  const { address, notes, bookingDate } = result.data;
 
   // Find an available cleaner (simple logic for now: pick the first one with fewest bookings)
   const cleaner = await prisma.user.findFirst({
@@ -32,9 +39,9 @@ export async function createBooking(formData: FormData) {
       data: {
         customerId: session.user.id,
         cleanerId: cleaner?.id || null,
-        date,
+        date: bookingDate,
         address,
-        notes,
+        notes: notes || null,
         status: "PENDING",
       },
     });

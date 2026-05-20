@@ -1,7 +1,6 @@
 import { describe, it, expect, vi, beforeEach } from "vitest";
 import { POST as createBooking, GET as getBookings } from "@/app/api/bookings/route";
 import { PATCH as updateBooking } from "@/app/api/bookings/[id]/route";
-import { POST as createReview } from "@/app/api/reviews/route";
 import { GET as getSupportTickets } from "@/app/api/support/route";
 import { POST as createOrder } from "@/app/api/payments/create-order/route";
 import { POST as verifyPayment } from "@/app/api/payments/verify/route";
@@ -46,6 +45,7 @@ vi.mock("@/auth", () => ({
 
 // Mock razorpay
 vi.mock("@/lib/razorpay", () => ({
+  isRazorpayConfigured: vi.fn(() => true),
   razorpay: {
     orders: {
       create: vi.fn(),
@@ -89,7 +89,6 @@ describe("API Unit Tests", () => {
       (prisma.booking.findMany as any).mockResolvedValue([{ id: "book_1", customerId: "cust_1" }]);
 
       const res = await getBookings();
-      const data = await res.json();
 
       expect(res.status).toBe(200);
       expect(prisma.booking.findMany).toHaveBeenCalledWith(expect.objectContaining({
@@ -106,7 +105,6 @@ describe("API Unit Tests", () => {
       (prisma.booking.findMany as any).mockResolvedValue([{ id: "book_1", cleanerId: "cleaner_1" }]);
 
       const res = await getBookings();
-      const data = await res.json();
 
       expect(res.status).toBe(200);
       expect(prisma.booking.findMany).toHaveBeenCalledWith(expect.objectContaining({

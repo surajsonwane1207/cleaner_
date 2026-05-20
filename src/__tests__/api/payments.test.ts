@@ -19,6 +19,7 @@ const { razorpayMock } = vi.hoisted(() => ({
 
 // Mock the library directly in the test file
 vi.mock("@/lib/razorpay", () => ({
+  isRazorpayConfigured: vi.fn(() => true),
   razorpay: razorpayMock,
 }));
 

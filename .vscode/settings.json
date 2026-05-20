@@ -1,5 +1,6 @@
 {
     "java.compile.nullAnalysis.mode": "automatic",
     "java.configuration.updateBuildConfiguration": "interactive",
-    "prisma.pinToPrisma6": true
+    "prisma.pinToPrisma6": true,
+    "maven.view": "hierarchical"
 }

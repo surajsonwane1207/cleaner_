@@ -1,7 +1,8 @@
 import { NextResponse } from "next/server";
 import { auth } from "@/auth";
 import { prisma } from "@/lib/prisma";
-import { razorpay } from "@/lib/razorpay";
+import { isRazorpayConfigured, razorpay } from "@/lib/razorpay";
+import { createOrderSchema } from "@/lib/validation";
 
 export async function POST(req: Request) {
   const session = await auth();
@@ -10,7 +11,17 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
-  const { planId } = await req.json();
+  if (!isRazorpayConfigured()) {
+    return NextResponse.json({ error: "Payment gateway is not configured" }, { status: 500 });
+  }
+
+  const result = createOrderSchema.safeParse(await req.json());
+
+  if (!result.success) {
+    return NextResponse.json({ error: "Invalid payment input" }, { status: 400 });
+  }
+
+  const { planId } = result.data;
 
   const plan = await prisma.subscriptionPlan.findUnique({
     where: { id: planId },
@@ -24,6 +35,10 @@ export async function POST(req: Request) {
     amount: plan.price * 100, // Amount in paise
     currency: "INR",
     receipt: `receipt_${Date.now()}`,
+    notes: {
+      planId: plan.id,
+      userId: session.user.id ?? "",
+    },
   };
 
   try {

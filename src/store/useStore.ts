@@ -1,8 +1,16 @@
 import { create } from "zustand";
 
+export interface AppUser {
+  id?: string;
+  name?: string | null;
+  email?: string | null;
+  image?: string | null;
+  role?: string;
+}
+
 interface UserState {
-  user: Record<string, unknown> | null;
-  setUser: (user: Record<string, unknown>) => void;
+  user: AppUser | null;
+  setUser: (user: AppUser) => void;
   logout: () => void;
 }
 

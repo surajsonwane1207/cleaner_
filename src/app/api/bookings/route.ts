@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { auth } from "@/auth";
+import { bookingSchema } from "@/lib/validation";
 
 export async function POST(req: Request) {
   try {
@@ -10,13 +11,13 @@ export async function POST(req: Request) {
     }
 
     const body = await req.json();
-    const { date, time, address, notes } = body;
+    const result = bookingSchema.safeParse(body);
 
-    if (!date || !time || !address) {
-      return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
+    if (!result.success) {
+      return NextResponse.json({ error: "Invalid booking input" }, { status: 400 });
     }
 
-    const bookingDate = new Date(`${date}T${time}`);
+    const { address, notes, bookingDate } = result.data;
 
     const cleaner = await prisma.user.findFirst({
       where: { role: "CLEANER" },
@@ -28,7 +29,7 @@ export async function POST(req: Request) {
         cleanerId: cleaner?.id || null,
         date: bookingDate,
         address,
-        notes,
+        notes: notes || null,
         status: "PENDING",
       },
     });

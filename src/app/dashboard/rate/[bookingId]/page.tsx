@@ -33,7 +33,7 @@ export default function RatePage() {
       } else {
         setStatus("error");
       }
-    } catch (error) {
+    } catch {
       setStatus("error");
     }
   };

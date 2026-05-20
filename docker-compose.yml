@@ -17,6 +17,7 @@ services:
       - bharatclean-network
 
   db:
+    # Using PostgreSQL for deployment as requested
     image: postgres:15-alpine
     restart: always
     environment:

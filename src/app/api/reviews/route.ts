@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { auth } from "@/auth";
 import { prisma } from "@/lib/prisma";
+import { reviewSchema } from "@/lib/validation";
 
 export async function POST(req: Request) {
   try {
@@ -9,11 +10,13 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
     }
 
-    const { bookingId, rating, comment } = await req.json();
+    const result = reviewSchema.safeParse(await req.json());
 
-    if (!bookingId || !rating) {
-      return NextResponse.json({ error: "Booking ID and rating are required" }, { status: 400 });
+    if (!result.success) {
+      return NextResponse.json({ error: "Invalid review input" }, { status: 400 });
     }
+
+    const { bookingId, rating, comment } = result.data;
 
     const booking = await prisma.booking.findUnique({
       where: { id: bookingId },
@@ -31,7 +34,7 @@ export async function POST(req: Request) {
       data: {
         bookingId,
         userId: session.user.id,
-        rating: parseInt(rating),
+        rating,
         comment,
       },
     });

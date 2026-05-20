@@ -20,16 +20,17 @@ BharatClean is a comprehensive full-stack web application designed for professio
 
 - **Frontend/Backend**: Next.js 16 (App Router, Turbopack)
 - **Styling**: Tailwind CSS + Shadcn UI
-- **Database**: SQLite (Local) / PostgreSQL (Production)
+- **Database**: PostgreSQL
 - **ORM**: Prisma
 - **Auth**: NextAuth.js v5
 - **Payments**: Razorpay
-- **Testing**: Selenium (E2E), Vitest (Unit), k6 (Performance)
+- **Database**: PostgreSQL (Production/Testing), SQLite (Development)
 
 ## 🏁 Getting Started
 
 ### 1. Prerequisites
 - Node.js 24+
+- Docker (optional, for PostgreSQL)
 - Java 8 (for Selenium tests)
 - Maven (for Selenium tests)
 
@@ -41,41 +42,27 @@ npm install
 ```
 
 ### 3. Environment Setup
-Create a `.env` file in the root directory (refer to `.env.example`):
+Create a `.env` file in the root directory (refer to `.env.example`).
+**For SQLite (Quick Start):**
 ```env
 DATABASE_URL="file:./dev.db"
-AUTH_SECRET="your-secret-key"
-RAZORPAY_KEY_ID="your-id"
-RAZORPAY_KEY_SECRET="your-secret"
-RESEND_API_KEY="your-key"
+```
+**For PostgreSQL:**
+```env
+DATABASE_URL="postgresql://postgres:postgres@localhost:5432/bharatclean?schema=public"
 ```
 
-### 4. Database Initialization
+### 4. Start Development
 ```bash
-npx prisma db push
-npm run prisma:seed # Pre-fills Admin, Cleaner, and Plans
-```
-
-### 5. Start Development
-```bash
-npm run dev
+npm run dev # Automatically switches to SQLite and synchronizes schema
 ```
 Open [http://localhost:3000](http://localhost:3000)
 
-## 🧪 Testing
-
-### Selenium E2E Tests
-Tests are located in `selenium-tests/`.
+### 5. Testing
+The project supports testing with both SQLite and PostgreSQL.
 ```bash
-cd selenium-tests/selenium-tests
-mvn test
-```
-*Note: Visual execution is enabled by default. Screenshots are saved in `screenshots/` on failure.*
-
-### Unit & Performance
-```bash
-npm run test       # Vitest
-npm run test:load  # k6 Load testing
+npm run test          # Runs tests with PostgreSQL (default)
+npm run test:sqlite   # Runs tests with SQLite
 ```
 
 ## 🚢 Deployment

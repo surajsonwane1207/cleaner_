@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { auth } from "@/auth";
+import { bookingUpdateSchema } from "@/lib/validation";
 
 export async function PATCH(
   req: Request,
@@ -14,7 +15,13 @@ export async function PATCH(
 
     const { id: userId, role } = session.user;
     const { id: bookingId } = await params;
-    const { status, cleanerId } = await req.json();
+    const result = bookingUpdateSchema.safeParse(await req.json());
+
+    if (!result.success) {
+      return NextResponse.json({ error: "Invalid booking update input" }, { status: 400 });
+    }
+
+    const { status, cleanerId } = result.data;
 
     const booking = await prisma.booking.findUnique({
       where: { id: bookingId },
@@ -24,7 +31,6 @@ export async function PATCH(
       return NextResponse.json({ error: "Booking not found" }, { status: 404 });
     }
 
-    // Role-based authorization
     if (role === "CLEANER") {
       if (booking.cleanerId !== userId) {
         return NextResponse.json({ error: "Forbidden: Not assigned to this job" }, { status: 403 });

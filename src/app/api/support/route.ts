@@ -1,18 +1,21 @@
 import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { auth } from "@/auth";
+import { supportTicketSchema } from "@/lib/validation";
 
 export async function POST(req: Request) {
   try {
     const body = await req.json();
-    const { name, email, subject, message } = body;
+    const result = supportTicketSchema.safeParse(body);
 
-    if (!name || !email || !subject || !message) {
+    if (!result.success) {
       return NextResponse.json(
-        { error: "All fields are required" },
+        { error: "Invalid support ticket input" },
         { status: 400 }
       );
     }
+
+    const { name, email, subject, message } = result.data;
 
     const ticket = await prisma.supportTicket.create({
       data: {
