@@ -6,7 +6,7 @@
   NODE_VERSION = "24"
 
 [functions]
-  node_version = "24"
+  node_bundler = "esbuild"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
