@@ -17,7 +17,7 @@ public class AppTestNG extends BaseTest {
     @Story("Landing Page UI")
     public void testLandingPage() {
         Log.info("Starting testLandingPage");
-        getDriver().get("http://localhost:3000");
+        getDriver().get("http://localhost:3001");
         
         LandingPage landingPage = new LandingPage(getDriver());
         
@@ -37,7 +37,7 @@ public class AppTestNG extends BaseTest {
     @Story("Login Navigation")
     public void testNavigationToLogin() {
         Log.info("Starting testNavigationToLogin");
-        getDriver().get("http://localhost:3000");
+        getDriver().get("http://localhost:3001");
         
         LandingPage landingPage = new LandingPage(getDriver());
         clickLoginButton(landingPage);

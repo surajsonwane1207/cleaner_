@@ -13,7 +13,7 @@ public class SupportSteps {
 
     @Given("I am on the BharatClean support page")
     public void i_am_on_the_bharat_clean_support_page() {
-        DriverManager.getDriver().get("http://localhost:3000/support");
+        DriverManager.getDriver().get("http://localhost:3001/support");
         supportPage = new SupportPage(DriverManager.getDriver());
     }
 

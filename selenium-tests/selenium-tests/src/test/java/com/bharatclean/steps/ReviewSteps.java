@@ -12,7 +12,7 @@ public class ReviewSteps {
 
     @Given("I am on the BharatClean rating page for a completed booking")
     public void i_am_on_rating_page() {
-        DriverManager.getDriver().get("http://localhost:3000/dashboard/rate/dummy-id");
+        DriverManager.getDriver().get("http://localhost:3001/dashboard/rate/dummy-id");
     }
 
     @When("I select a 5-star rating")

@@ -20,7 +20,7 @@ public class ReviewTestNG extends BaseTest {
     public void testReviewPageLoad() {
         Log.info("Starting testReviewPageLoad");
         // We go directly to a dummy rate page for testing purposes
-        getDriver().get("http://localhost:3000/dashboard/rate/dummy-id");
+        getDriver().get("http://localhost:3001/dashboard/rate/dummy-id");
         
         WebElement header = getDriver().findElement(By.xpath("//*[contains(text(), 'Rate your Cleaning Session')]"));
         Assert.assertTrue(header.isDisplayed(), "Review page header should be displayed");

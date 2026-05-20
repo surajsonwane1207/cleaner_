@@ -20,7 +20,7 @@ public class CleanerTestNG extends BaseTest {
     public void testCleanerFullJourney() throws InterruptedException {
         Log.info("Starting testCleanerFullJourney");
         
-        getDriver().get("http://localhost:3000/login");
+        getDriver().get("http://localhost:3001/login");
         LoginPage loginPage = new LoginPage(getDriver());
         
         Log.info("Step 1: Logging in as Cleaner");
@@ -30,7 +30,7 @@ public class CleanerTestNG extends BaseTest {
         wait.until(ExpectedConditions.urlContains("dashboard"));
         
         Log.info("Step 2: Navigating to Cleaner Portal");
-        getDriver().get("http://localhost:3000/dashboard/cleaner");
+        getDriver().get("http://localhost:3001/dashboard/cleaner");
         
         CleanerPage cleanerPage = new CleanerPage(getDriver());
         Assert.assertTrue(cleanerPage.isPortalHeaderDisplayed(), "Cleaner Portal header should be displayed");
@@ -51,7 +51,7 @@ public class CleanerTestNG extends BaseTest {
         Assert.assertTrue(finalCompletedCount > initialCompletedCount, "Completed job count should have increased");
         
         Log.info("Step 5: Logging out");
-        getDriver().get("http://localhost:3000/api/auth/signout"); // Direct logout for speed in this role test
+        getDriver().get("http://localhost:3001/api/auth/signout"); // Direct logout for speed in this role test
         
         Log.info("Finished testCleanerFullJourney successfully");
     }

@@ -23,7 +23,7 @@ public class EndToEndTestNG extends BaseTest {
         String password = "password123";
         String name = "E2E Test User";
 
-        getDriver().get("http://localhost:3000");
+        getDriver().get("http://localhost:3001");
         LandingPage landingPage = new LandingPage(getDriver());
         
         // 1. Register
@@ -38,7 +38,7 @@ public class EndToEndTestNG extends BaseTest {
         wait.until(ExpectedConditions.urlContains("login"));
         
         // Sometimes the redirect state causes issues, let's refresh or navigate directly
-        getDriver().get("http://localhost:3000/login");
+        getDriver().get("http://localhost:3001/login");
         Thread.sleep(2000); // Small wait for page stabilization
         
         LoginPage loginPage = new LoginPage(getDriver());
@@ -77,7 +77,7 @@ public class EndToEndTestNG extends BaseTest {
         dashboardPage.logout();
         
         wait.until(ExpectedConditions.or(
-            ExpectedConditions.urlToBe("http://localhost:3000/"),
+            ExpectedConditions.urlToBe("http://localhost:3001/"),
             ExpectedConditions.urlContains("login")
         ));
         Log.info("Finished testFullUserJourney successfully");

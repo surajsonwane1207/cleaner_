@@ -12,7 +12,7 @@ public class LandingSteps {
 
     @Given("I am on the BharatClean landing page")
     public void i_am_on_the_bharat_clean_landing_page() {
-        DriverManager.getDriver().get("http://localhost:3000");
+        DriverManager.getDriver().get("http://localhost:3001");
         landingPage = new LandingPage(DriverManager.getDriver());
     }
 

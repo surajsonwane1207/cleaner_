@@ -16,7 +16,7 @@ public class SupportTestNG extends BaseTest {
     @Story("Support Ticket Submission")
     public void testSupportSubmission() {
         Log.info("Starting testSupportSubmission");
-        getDriver().get("http://localhost:3000/support");
+        getDriver().get("http://localhost:3001/support");
         
         SupportPage supportPage = new SupportPage(getDriver());
         

@@ -21,7 +21,7 @@ public class AdminTestNG extends BaseTest {
     public void testAdminDashboard() throws InterruptedException {
         Log.info("Starting testAdminDashboard");
         
-        getDriver().get("http://localhost:3000/login");
+        getDriver().get("http://localhost:3001/login");
         LoginPage loginPage = new LoginPage(getDriver());
         
         Log.info("Logging in as Admin");
@@ -31,7 +31,7 @@ public class AdminTestNG extends BaseTest {
         wait.until(ExpectedConditions.urlContains("dashboard"));
         
         Log.info("Navigating to Admin Dashboard");
-        getDriver().get("http://localhost:3000/dashboard/admin");
+        getDriver().get("http://localhost:3001/dashboard/admin");
         
         wait.until(ExpectedConditions.urlContains("admin"));
         
